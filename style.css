@@ -1,0 +1,231 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 6%, 24%);
+}
+@media (max-width: 768px) {
+    body {
+        background: none;
+    }
+}
+main{
+    width: 1050px;
+    height: 590.625px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 35px;
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
+}
+@media (max-width: 768px) {
+    main {
+        width: 100vw;
+        height:auto;
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: none;
+        background:none;
+      
+    }
+}
+#bgLateral{
+    background-image: url(images/hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 590.625px;
+    width:453.48px;
+}
+#imgMulher{
+    visibility: hidden;
+}
+@media (max-width: 768px) {
+    #imgMulher {
+        visibility: visible;
+        width:100vw;
+        margin: 0;
+        margin-top:-500px;
+        padding: 0;
+    }
+}
+@media (max-width: 768px) {
+    #bgLateral {
+        visibility: hidden;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100vw;
+    }
+}
+#texts{
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 512.43px;
+    height: 590.625px;
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start ;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-top: 45px;
+}
+@media (max-width: 768px) {
+    #texts {
+        background-image: none;
+        background-color: white ;
+        width: 100vw;
+        height: none;
+        justify-content: flex-start;
+        align-items:center;
+        padding: 0;
+    }
+}
+#texts img{
+    margin-bottom: 100px;
+}
+@media (max-width: 768px) {
+    #texts img{
+        margin-left: -60%;
+        margin-bottom: 80%;
+        margin-top: 30px;
+    }
+}
+#texts h1{
+    font-size: 45px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 15px;
+    color: hsl(0, 36%, 70%);
+}
+@media (max-width: 768px) {
+    #texts h1{
+        text-align: center;
+        width: 80%;
+    }
+}
+#texts h2{
+    margin: 0;
+    margin-bottom: 18px;
+    padding: 0;
+    font-size: 45px;
+    width: 300px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+@media (max-width: 768px) {
+    #texts h2{
+        text-align: center;
+        width: 80%;
+    }
+}
+#texts p {
+    color: hsl(0, 0%, 54%);
+    width: 400px;
+    margin-bottom: 25px;
+    line-height: 1.75;
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    #texts p{
+        width: 80%;
+        text-align: center;
+        color: hsl(0, 36%, 70%);
+        font-size: 16px;
+    }
+}
+#inputEmail{
+    width: 400px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid hsl(0, 1%, 69%) ;
+    padding-left: 18px;
+}
+@media (max-width: 768px) {
+    #inputEmail{
+        height: 50px;
+        width: 80%;
+    }
+}
+#texts button{
+    background-image: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    border: 0;
+    border-radius: 40px;
+    width: 90px;
+    padding-top: 15px;
+    height: 45px;
+    margin-left: -90px;
+    position: relative;
+}
+@media (max-width: 768px) {
+    #texts button{
+        height: 55px;
+        width: 400%;
+        margin-left: -400%;
+    }
+}
+@media (max-width: 768px) {
+    #texts button img{
+        position:static;
+        margin: 0%;
+    }
+}
+#texts button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(to bottom,hsl(0, 80%, 86%),hsl(0, 2%, 82%));
+    filter: blur(10px);
+    transform: translateY(40px) scale(1);
+    border-radius: 20px;
+}
+#texts button:hover{
+    background-image: linear-gradient(135deg,hsl(0, 87%, 91%),hsl(0, 87%, 85%));
+}
+#texts section{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+
+
+}  
+@media (max-width: 768px) {
+    #texts section{
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+#texts #mesageErro{
+    color: hsl(0, 82%, 58%);
+    margin: -92px 0 0 10px;
+    visibility: hidden;
+ }
+ @media (max-width: 768px) {
+    #texts #mesageErro{
+        color: hsl(0, 82%, 58%);
+        margin:0 0 0 0;
+        padding: 0;
+    }
+}
+#texts #erroIcon{
+    position: absolute;
+    left: 38%;
+    top: 77%;
+    height: 25px;
+    width: 25px;
+    visibility: hidden;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script type="text/javascript" src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Coming soon</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+</head>
+<body>
+<main>
+    <div id="texts">
+      <img src="images/logo.svg" alt="logo da empresa">
+      <h1>We're </h1> <h2>coming soon</h2>
+      <p>Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.</p>
+        <section>
+
+          <input type="email" name="email" id="inputEmail" placeholder="Email Address"> 
+          <img id="erroIcon" src="images/icon-error.svg"  name="imageError">
+          <a id="link" target="_blank"><button id="but" onclick="validacaoEmail()" >
+            <img src="images/icon-arrow.svg" alt="entrar">
+          </button></a>
+        </section>
+          <p id="mesageErro" name="textError"> Please digite um email valido</p>
+    </div>
+    <div id="bgLateral">
+      <img src="images/hero-mobile.jpg" alt="pessoa com olhar forte" id="imgMulher">
+    </div>
+</main>
+</body>
+</html>
